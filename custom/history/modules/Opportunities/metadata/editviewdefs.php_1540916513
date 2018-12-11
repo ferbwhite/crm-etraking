@@ -1,0 +1,143 @@
+<?php
+$viewdefs ['Opportunities'] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'javascript' => '{$PROBABILITY_SCRIPT}',
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'LBL_EDITVIEW_PANEL1' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'DEFAULT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_PANEL_ASSIGNMENT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+    ),
+    'panels' => 
+    array (
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'name',
+          ),
+          1 => 'account_name',
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gestionados_c',
+            'studio' => 'visible',
+            'label' => 'LBL_GESTIONADOS',
+          ),
+          1 => 
+          array (
+            'name' => 'contratado_c',
+            'studio' => 'visible',
+            'label' => 'LBL_CONTRATADO',
+          ),
+        ),
+        2 => 
+        array (
+          0 => '',
+          1 => 
+          array (
+            'name' => 'date_closed',
+          ),
+        ),
+      ),
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'jjwg_maps_address_c',
+            'label' => 'LBL_JJWG_MAPS_ADDRESS',
+          ),
+          1 => 
+          array (
+            'name' => 'jjwg_maps_geocode_status_c',
+            'label' => 'LBL_JJWG_MAPS_GEOCODE_STATUS',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 'description',
+          1 => 
+          array (
+            'name' => 'created_by_name',
+            'label' => 'LBL_CREATED',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'date_entered',
+            'comment' => 'Date record created',
+            'label' => 'LBL_DATE_ENTERED',
+          ),
+          1 => 
+          array (
+            'name' => 'amount',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 'opportunity_type',
+          1 => 'sales_stage',
+        ),
+        4 => 
+        array (
+          0 => 'lead_source',
+          1 => 'probability',
+        ),
+        5 => 
+        array (
+          0 => 'campaign_name',
+          1 => 'next_step',
+        ),
+      ),
+      'LBL_PANEL_ASSIGNMENT' => 
+      array (
+        0 => 
+        array (
+          0 => 'assigned_user_name',
+        ),
+      ),
+    ),
+  ),
+);
+;
+?>

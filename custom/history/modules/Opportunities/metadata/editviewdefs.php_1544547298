@@ -1,0 +1,99 @@
+<?php
+$viewdefs ['Opportunities'] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'javascript' => '{$PROBABILITY_SCRIPT}',
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'LBL_PANEL_ASSIGNMENT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL2' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+    ),
+    'panels' => 
+    array (
+      'LBL_PANEL_ASSIGNMENT' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'name',
+          ),
+          1 => 
+          array (
+            'name' => 'aos_products_opportunities_1_name',
+            'label' => 'LBL_AOS_PRODUCTS_OPPORTUNITIES_1_FROM_AOS_PRODUCTS_TITLE',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'operador_de_telecomunicacion_c',
+            'studio' => 'visible',
+            'label' => 'LBL_OPERADOR_DE_TELECOMUNICACION',
+          ),
+          1 => 'account_name',
+        ),
+        2 => 
+        array (
+          0 => 'sales_stage',
+          1 => 
+          array (
+            'name' => 'sub_estado_oportunidad_c',
+            'studio' => 'visible',
+            'label' => 'LBL_SUB_ESTADO_OPORTUNIDAD',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 'probability',
+          1 => 
+          array (
+            'name' => 'notes_opportunities_1_name',
+            'label' => 'LBL_NOTES_OPPORTUNITIES_1_FROM_NOTES_TITLE',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 'description',
+        ),
+      ),
+      'lbl_editview_panel2' => 
+      array (
+        0 => 
+        array (
+          0 => 'assigned_user_name',
+        ),
+      ),
+    ),
+  ),
+);
+;
+?>
